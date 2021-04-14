@@ -1,11 +1,3 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/cXgA1d_E-jY
-
-// Class is exported (eslint flag)
-/* exported Bird */
-
 class Bird {
   constructor() {
     this.y = height / 2;

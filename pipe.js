@@ -1,11 +1,3 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/cXgA1d_E-jY
-
-// Pipe is exported (eslint flags)
-/* exported Pipe */
-
 class Pipe {
   constructor() {
     this.spacing = 125;
@@ -41,7 +33,7 @@ class Pipe {
       this.passed = true;
       return true;
     }
-    return false;
+    return true;
   }
 
   drawHalf() {

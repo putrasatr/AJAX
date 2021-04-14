@@ -1,14 +1,3 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/cXgA1d_E-jY
-
-// P5 exported functions (eslint flags)
-/* exported preload, setup, draw, keyPressed */
-
-// Exported sprites (eslint flags)
-/* exported birdSprite, pipeBodySprite, pipePeakSprite */
-
 var bird;
 var pipes;
 var parallax = 0.8;
@@ -25,12 +14,11 @@ var isOver = false;
 var touched = false;
 var prevTouched = touched;
 
-
 function preload() {
   pipeBodySprite = loadImage('graphics/pipe_marshmallow_fix.png');
   pipePeakSprite = loadImage('graphics/pipe_marshmallow_fix.png');
-  birdSprite = loadImage('graphics/train.png');
-  bgImg = loadImage('graphics/background.png');
+  birdSprite = loadImage('graphics/jisoo.jpg');
+  bgImg = loadImage('graphics/logo.png');
 }
 
 function setup() {
@@ -76,7 +64,7 @@ function draw() {
   bird.update();
   bird.show();
 
-  if ((frameCount - gameoverFrame) % 150 == 0) {
+  if ((frameCount - gameoverFrame) % 12000 == 0) {
     pipes.push(new Pipe());
   }
 
